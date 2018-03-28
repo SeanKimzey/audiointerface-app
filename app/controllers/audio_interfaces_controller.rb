@@ -1,0 +1,2 @@
+class AudioInterfacesController < ApplicationController
+end
