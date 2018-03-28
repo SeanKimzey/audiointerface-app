@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/interfaces' => "audio_interfaces#index"
+  get '/interfaces/:id' => "audio_interfaces#show"
+  post '/interface' => "audio_interfaces#create"
 end
