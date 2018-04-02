@@ -25,11 +25,9 @@ class AudioInterfacesController < ApplicationController
   def update
     interface = Interface.find_by(id: params[:id])
     interface.update(
-      brand: "Test",
-      model: "test",
-      inputs: 1234,
-      outputs: 4321
+      price: 200
       )
+    
     interface.save
     render json: {message: "You updated this interface"}
   end
